@@ -2,12 +2,12 @@ public class Cliente {
 
 	private String nome;
 	private String CPF;
-	private String dataNascimento;
+	private Data dataNasc;
 	
-	public Cliente (String novoNome, String novoCPF, String novaDataNascimento) {
+	public Cliente (String novoNome, String novoCPF, Data NovaData) {
 		this.nome = novoNome;
 		this.CPF = novoCPF;
-		this.dataNascimento = novaDataNascimento;
+		this.dataNasc = NovaData;
 		}
 	
 	public String getNome () {
@@ -18,19 +18,11 @@ public class Cliente {
 		return CPF;
 	}
 	
-	public double getDataNascimento () {
-		return dataNascimento;
-	}
-	
 	public void setNome (String novoNome) {
 		this.nome = novoNome;
 	}
 	
-	public void setCPF (String novoCPF) {
-		this.CPF = novoCPF;
-	}
-	
-	public void setDataNascimento (int novoDataNascimento) {
-		this.dataNascimento = novoDataNascimento;
+	public void setDataNasc (Data NovaData) {
+		this.dataNasc = novaData;
 	}
 }
