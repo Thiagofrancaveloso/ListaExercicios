@@ -1,5 +1,3 @@
-package AulaBia;
-
 public class Funcionario {
 
 	private String nome;
